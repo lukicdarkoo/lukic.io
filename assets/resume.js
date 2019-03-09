@@ -25,4 +25,26 @@
         target: '#sideNav'
     });
 
+    // List
+    var projectList = new List('project-list', {
+        valueNames: ['keywords', 'description', 'name'],
+        page: 3,
+        pagination: true,
+        fuzzySearch: {
+            searchClass: 'search-fuzzy',
+            location: 0,
+            distance: 100,
+            threshold: 0.4,
+            multiSearch: true
+        },
+    });
+    
+    projectList.on('updated', () => {
+        document.querySelectorAll('#project-list > ul.pagination > li').forEach(page => {
+            page.classList.add('page-item');
+            page.querySelector('a').classList.add('page-link');
+        });
+    });
+
+
 })(jQuery);

@@ -215,3 +215,65 @@ a:focus,
 a:active {
     color: #2980b9;
 }
+
+
+
+.pagination > li {
+    border: 1px solid #ccc;
+    border-left: 0;
+    padding: 0;
+}
+
+.pagination > li:first-of-type {
+    border-left: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination > li:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pagination > li > a {
+    padding: 6px 12px;
+    cursor: pointer;
+    color: unset;
+}
+
+.pagination > li.active {
+    background-color: #2980b9;
+    color: white;
+}
+
+.pagination > li > a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+
+#project-list > .list {
+    padding: 0;
+    margin-top: 15px;
+}
+
+#project-list > .list > li {
+    list-style-type: none;
+}
+
+.list .keywords {
+    font-size: 12px;
+}
+
+.list .keywords::before {
+    content: 'Keywords: ';
+}
+
+.list .description {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+} 

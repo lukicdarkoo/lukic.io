@@ -68,6 +68,9 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -242,14 +245,72 @@
                 </div>
             </div>
         </section>
+
+        <hr class="m-0">
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+            <div class="my-auto">
+                <h2 class="mb-5">Projects</h2>
+
+                <div id="project-list">
+                    <input type="text" class="form-control search-fuzzy" placeholder="Filter by typing eg. 'Robotics', 'Microcontroller'..." />
+
+                    
+                    <ul class="list">
+                        <li>
+                            <h4 class="name">Underwater Acoustic Communication</h4>
+
+                            <span class="hidden date-control">2018/09</span>
+
+                            <span class="date">September 2018 - January 2019</span> | 
+                            <span class="host"><a target="_blank" href="https://disal.epfl.ch/">DISAL Lab @ EPFL</a></span> | 
+                            <span class="date"><a target="_blank" href="https://disal.epfl.ch/teaching/students_projects/AY_2018-2019/DISAL-SP124">Link</a></span>
+
+                            <p class="description">
+                                Frequency-shift keying (FSK) is implemented on a 32bit AVR microcontroller. Due to low processing power of the microcontroller various methods are introduced to optimise calculations or to postpone it when the micrcontroller is less busy. Moreover, the implementation is integrated in existing codebase. 
+                                Various measurements are performed in order to evaluate performance of the implementation such as minimal distance between frequencies, error rate, influence of different environments and maximal number of bits per symbol. The results show that the required performance are achieved.
+                            </p>
+                            <p class="keywords">
+                                Modulation, FSK, PSK, Signal Processing, Acoustic Communication, Python, C, AVR
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <h4 class="name">Walking Controller for a Three-link 2D Biped</h4>
+
+                            <span class="hidden date-control">2018/09</span>
+
+                            <span class="date">September 2018 - December 2018</span> | 
+                            <span class="host"><a target="_blank" href="https://edu.epfl.ch/coursebook/en/legged-robots-MICRO-507">Legged Robots course @ EPFL</a></span> | 
+                            <span><a target="_blank" href="https://github.com/lukicdarkoo/legged-robots">Github</a></span>
+
+                            <p class="description">
+                                    Model and visualize the 3-link biped. Solve the equations of motion of the 3-link biped (Simulation). Design a walking controller, and evaluate the resulting gait.
+                            </p>
+                            <p class="keywords">
+                                Kinematics, Dynamics, Locomotion, Matlab, Simulation, Differential Equations, Genetic Algorithm
+                            </p>
+                        </li>
+                        
+                    </ul>
+                    <ul class="pagination"></ul>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
     <script src="assets/resume.js"></script>
+
     <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
 </body>
 
