@@ -1,3 +1,5 @@
+const URL = 'https://docs.google.com/document/d/e/2PACX-1vR19XF8SYi0FQvij5F_gpkovJuettLAksXEIuZb304Ap4KoEunVkA3-Tm-go6UPKsLqC9_k3My4VUzc/pub?embedded=true';
+
 (function ($) {
     "use strict"; // Start of use strict
 
@@ -25,9 +27,22 @@
         target: '#sideNav'
     });
 
+    
+    let projectTemplate = `<li>
+        <h4 class="title"></h4>
+        
+        <span class="hidden machinedate"></span>
+        <span class="date"></span> | 
+        <span class="host"></span> | 
+        <span class="link"></span>
+
+        <p class="content"></p>
+        <p class="keywords"></p>
+    </li>`
+
     // List
     var projectList = new List('project-list', {
-        valueNames: ['keywords', 'description', 'name'],
+        valueNames: ['keywords', 'content', 'title', 'date', 'host', 'link', 'machinedate'],
         page: 3,
         pagination: true,
         fuzzySearch: {
@@ -37,8 +52,9 @@
             threshold: 0.4,
             multiSearch: true
         },
+        item: projectTemplate,
     });
-    
+
     projectList.on('updated', () => {
         document.querySelectorAll('#project-list > ul.pagination > li').forEach(page => {
             page.classList.add('page-item');
@@ -46,5 +62,8 @@
         });
     });
 
-
+    getArticles(URL).then((projects) => {
+        projectList.add(projects);
+        console.log(projects);
+    })
 })(jQuery);
