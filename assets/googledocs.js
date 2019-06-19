@@ -50,14 +50,31 @@ function _parseProjects(response, userOptions) {
                 } else {
                     // Add content
                     if (options.htmlFields.indexOf('content') >= 0) {
-                        projects[projects.length - 1].content += child.innerHTML;
+                        // Alternate link
+                        for (let a of child.getElementsByTagName('a')) {
+                            let href = [ ...a.getAttribute('href').matchAll(/\?q=([^&]+)/g) ];
+                            if (href.length > 0) {
+                                a.setAttribute('href', href[0][1]);
+                            }
+                            a.setAttribute('target', '_blank');
+                        }
+
+                        // Alternate images
+                        if (child.querySelector('img')) {
+                            let span = child.getElementsByTagName('span')[0];
+                            span.style = {};
+                            span.style.float = 'left';
+                            span.style.margin = '8px';
+                        }
+
+                        projects[projects.length - 1].content += `<p>${child.innerHTML}</p>`;
                     } else if (child.innerText.replace(/\s/g, '').length > 0) {
                         projects[projects.length - 1].content += `<p>${child.textContent}</p>`;
                     }
                 }
                 break;
             default:
-                console.log(`Not processed ${ child.tagName }`);
+                console.warn(`Not processed ${ child.tagName }`);
                 break;
         }
     }
