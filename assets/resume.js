@@ -64,5 +64,5 @@ const URL = 'https://docs.google.com/document/d/e/2PACX-1vR19XF8SYi0FQvij5F_gpko
         projectList.add(projects);
         projectList.sort('machinedate', { order: 'desc' });
         console.log(projects);
-    })
+    }, { htmlFields: [ 'content' ] })
 })(jQuery);
