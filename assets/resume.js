@@ -32,9 +32,7 @@ const URL = 'https://docs.google.com/document/d/e/2PACX-1vR19XF8SYi0FQvij5F_gpko
         <h4 class="title"></h4>
         
         <span class="hidden machinedate"></span>
-        <span class="date"></span> | 
-        <span class="host"></span> | 
-        <span class="link"></span>
+        <span class="date"></span>
 
         <p class="content"></p>
         <p class="keywords"></p>
