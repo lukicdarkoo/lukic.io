@@ -41,7 +41,7 @@ const URL = 'https://docs.google.com/document/d/e/2PACX-1vR19XF8SYi0FQvij5F_gpko
     // List
     var projectList = new List('project-list', {
         valueNames: ['keywords', 'content', 'title', 'date', 'host', 'link', 'machinedate'],
-        page: 3,
+        page: 10,
         pagination: true,
         fuzzySearch: {
             searchClass: 'search-fuzzy',
