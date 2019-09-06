@@ -36,6 +36,8 @@ const URL = 'https://docs.google.com/document/d/e/2PACX-1vR19XF8SYi0FQvij5F_gpko
 
         <p class="content"></p>
         <p class="keywords"></p>
+
+        <hr />
     </li>`
 
     // List
