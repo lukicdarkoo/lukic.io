@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <title>CV | Darko Lukić</title>
+    <meta name="viewport" content="device=device-width, initial-scale=1" />
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/84739a5aa9.js" crossorigin="anonymous"></script>
     <style>
@@ -9,14 +13,16 @@
         :root {
             --border-color: #eee;
             --padding: 10mm;
-            --sidebar-width: 70mm;
+            --sidebar-width: 69mm;
+            --dark-text: #222;
+            --light-text: #333;
         }
 
         html,
         body {
             margin: 0;
             padding: 0;
-            background-color: #333;
+            background-color: var(--dark-text);
             font-family: 'Montserrat', sans-serif;
             box-sizing: border-box;
         }
@@ -95,10 +101,19 @@
         }
 
         ul,
-        p {
-            color: #444;
+        p,
+        table {
+            color: var(--light-text);
             font-size: 10pt;
             line-height: 14pt;
+        }
+
+        table td {
+            padding-bottom: 8pt;
+        }
+
+        table {
+            width: 100%;
         }
 
         hr {
@@ -115,13 +130,18 @@
             width: 50pt;
         }
 
-        p {
+        .sidebar p {
+            margin: 3pt 0 5pt 0;
+        }
+
+        .content p {
             margin: 3pt 0 5pt 0;
             text-align: justify;
         }
 
         p.summary {
             font-style: italic;
+            margin-top: 0;
         }
 
         ul {
@@ -170,7 +190,7 @@
         .experience>h4,
         .experience>p {
             display: inline-block;
-            width: calc(50% - var(--padding) / 2);
+            width: calc(50% - var(--padding) / 8);
             vertical-align: top;
             padding: 0;
             margin: 20pt 0 0 0;
@@ -179,6 +199,10 @@
         .experience>p {
             text-align: right;
         }
+
+        .first {
+            margin-top: 0;
+        }
     </style>
 </head>
 
@@ -186,7 +210,7 @@
     <div class="cv">
         <div class="page">
             <div class="sidebar">
-                <img class="image" src="https://github.com/lukicdarkoo.png" />
+                <img class="image" alt="Darko Lukić" src="https://github.com/lukicdarkoo.png" />
 
                 <h1>Darko Lukić</h1>
 
@@ -227,7 +251,7 @@
                     <li><b>Robotics</b> - Perception, Control, Simulation</li>
                     <li><b>Embedded Systems</b> - Microcontrollers, FPGA, Embedded Linux</li>
                     <li><b>Digital Signal Processing</b> - Wireless Communication, Acoustics</li>
-                    <li><b>Computer Vision</b> - Photogrammetry, CNN, Image Processing</li>
+                    <li><b>Computer Vision</b> - Photogrammetry, CNN, Pattern Recognition</li>
                 </ul>
                 <hr />
 
@@ -249,13 +273,15 @@
             </div>
 
             <div class="content">
-                <h3>Profile</h3>
                 <p class="summary">
-                    Darko is pursuing a Master degree in Robotics at EPFL, majoring in Mobile Robotics. His expertise
-                    also
-                    covers digital signal processing, embedded systems and computer vision. He
-                    is a former CERN Technical Student, former software lead of robotics club Memristor, founder of
-                    SpesDriver, and a major contributor to many software/hardware related projects.
+                    I am a second-year master student in Robotics (major in Mobile Robotics) at Swiss Federal Institute
+                    of Technology in Lausanne.
+                    Prior to it, I obtained my BSc (Hons) degree in Computer Engineering. Together with numerous side
+                    projects and internships
+                    in industry I strongly believe I am ready for challenging software related projects in Mobile
+                    Robotics. I enjoy working
+                    in dynamic and interdisciplinary teams, learning new concepts and technologies, and exploring new
+                    possibilities.
                 </p>
 
                 <hr />
@@ -267,14 +293,13 @@
                     <h4>Student Researcher</h4>
                     <p>Jul 2019 - Sep 2019</p>
                 </div>
-                <p>Swiss Federal Institute of Technology in Lausanne, Switzerland</p>
+                <p>EPFL, Switzerland</p>
                 <p>
                     At DISAL laboratory I was mainly focused on acoustics for autonomous underwater vehicles (AUVs). My
-                    role
-                    was to develop robust algorithms for acoustic communication and precise ranging for AUVs and compare
-                    it
-                    with available products on the market. The algorithms are implemented on the embedded system and
-                    successfully evaluated in Lake Geneva, outperforming the comparable products in a transfer speed.
+                    role was to develop robust algorithms for acoustic communication and precise ranging for AUVs and
+                    compare it with available products on the market. The algorithms are implemented on the embedded
+                    system and successfully evaluated in <a href="https://www.google.com/maps/place/Lake+Geneva">Lake
+                        Geneva</a>, outperforming the comparable products in a transfer speed.
                 </p>
 
 
@@ -284,12 +309,12 @@
                 </div>
                 <p><a href="https://home.cern/">CERN</a>, Switzerland</p>
                 <p>
-                    At CERN I was a member of
+                    As a member of
                     <a href="http://information-technology.web.cern.ch/about/organisation/linux-configuration-support">Configuration
-                        Management team</a>. My goal was to provide building blocks for instant communication
+                        Management team</a> my goal was to provide building blocks for instant communication
                     between services. In order to achieve the goal, I had to create a Puppet module, Python library
-                    and CLI tool based on centralised ActiveMQ server. The software is scaled on more than 42000
-                    Linux based nodes and I helped integration with EOS, Load balancing, CASTOR, CCPCO, Roger, HAProxy
+                    and CLI tools based on centralised ActiveMQ server. The software is scaled on more than 42000
+                    Linux based nodes and I helped integration with Load balancing, HAProxy, CASTOR, CCPCO, Roger
                     and other services.
                 </p>
 
@@ -298,10 +323,9 @@
                     <p>Jul 2017 - August 2017</p>
                 </div>
                 <p><a href="http://www.gt-initiative.org/">Geneva Tsinghua Initiative</a>, Switzerland & China</p>
-                <p>The summer school was supported by a few Swiss and Chinese institutions (<a
-                        href="https://home.cern/">CERN</a>,
+                <p>The summer school was supported by <a href="https://home.cern/">CERN</a>,
                     <a href="https://www.unige.ch/">University of Geneva</a> and
-                    <a href="http://www.tsinghua.edu.cn">Tsinghua University</a>). I was working on an open source
+                    <a href="http://www.tsinghua.edu.cn">Tsinghua University</a>. I was working on an open source
                     cosmic
                     ray detector,
                     <a href="http://cosmicpi.org/">CosmicPi</a>. My task was to create FPGA based trigger and web
@@ -334,7 +358,7 @@
 
         <div class="page">
             <div class="sidebar">
-                <h1>Darko Lukić</h1>
+                <h1 class="first">Darko Lukić</h1>
 
                 <h2>Robotics Engineer</h2>
 
@@ -356,26 +380,52 @@
 
                 <hr />
 
+                <h3>Trainings</h3>
+                <ul>
+                    <li>Innosuisse Start-up Training (2018)</li>
+                    <li>Robotics Engineer at RB2.io (2018)</li>
+                    <li>Modern Mechatronic Systems Training (2016)</li>
+                    <li>Fusion Workshop (2016)</li>
+                    <li>Android Workshop (2014)</li>
+                    <li>Web Developer at Levi9 (2014)</li>
+                </ul>
+
+                <hr />
+
+                <h3>Prizes</h3>
+                <ul>
+                    <li>International competition Hardware & Software (2016) 3<sup>rd</sup></li>
+                    <li>Olympics of innovations for South-Eastern Europe (2013) 1<sup>st</sup></li>
+                    <li>INOST, International exhibition of innovation (2013 & 2016) 1<sup>st</sup></li>
+                </ul>
+
+                <hr />
+
                 <h3>References</h3>
 
-                <p>
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/lukicdarkoo">lukicdarkoo</a>
-                </p>
-
-                <p>
-                    <i class="fab fa-gitlab"></i>
-                    <a href="https://gitlab.com/lukicdarkoo">lukicdarkoo</a>
-                </p>
-
-                <p>
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/lukicdarkoo/">lukicdarkoo</a>
-                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/lukicdarkoo">lukicdarkoo</a>
+                        </td>
+                        <td>
+                            <i class="fab fa-gitlab"></i>
+                            <a href="https://gitlab.com/lukicdarkoo">lukicdarkoo</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/lukicdarkoo/">lukicdarkoo</a>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
             <div class="content">
-                <h3>Professional Experience <span style="text-transform: none; font-size: 11pt">continued</span></h3>
+                <h3 class="first">Professional Experience <span
+                        style="text-transform: none; font-size: 11pt">continued</span></h3>
 
 
                 <div class="experience">
@@ -387,9 +437,8 @@
                 </p>
                 <p>Together with the other
                     <a href="https://ljmocic.github.io/">student</a>, we developed a protype Android application for
-                    online
-                    payments. That required a
-                    knowledge of Android development, payment systems and we had to integrate a few
+                    online payments. That required a knowledge of Android development, payment systems and we had to
+                    integrate a few
                     <a href="https://aws.amazon.com/">Amazon Services</a>.
                 </p>
 
@@ -415,6 +464,35 @@
                     <a href="https://gitlab.com/lukicdarkoo/calib-tools">corner finding tool</a> is developed to obtain
                     data
                     set from highly distorted images.
+                </p>
+
+                <div class="experience">
+                    <h4>Robotics Platform</h4>
+                    <p>Jun 2015 - Apr 2016</p>
+                </div>
+                <p>
+                    Together with other student, we tried to develop and push idea of web IDE for physical robots
+                    and <a href="https://spesrobo.bitbucket.io/store/">online app store</a>.
+                    The project has been called <a href="https://spesrobo.bitbucket.io/landing/">SpesRobo</a>. I
+                    developed a simple <a href="https://www.youtube.com/watch?v=j32L86yP7x4">JavaScript API</a> for
+                    programmers to develop and run applications for robot inside a web browser.
+                    The API interacts with embeeded computer located on physical robot and a custom protocol enables
+                    communication and command execution.
+                </p>
+
+                <div class="experience">
+                    <h4>Online Learning Platform</h4>
+                    <p>Aug 2012 - present</p>
+                </div>
+                <p>
+                    I have developed <a
+                        href="https://play.google.com/store/apps/details?id=com.lukicdarkoo.spesdriver">mobile</a> and
+                    <a href="https://spesdriver.com/ba">web</a> applications called SpesDriver that helps future drivers
+                    to
+                    prepare their theoretical driving exam. Alone, I made REST API in Yii2 framework, designed MySQL
+                    database, developed Angular frontend and integrated I18N support. Today, the web application has
+                    over 20,000 users per month and mobile application over 150,000 installations. Also, I made a
+                    collaboration with local car schools which allows them to be advertised on my platform.
                 </p>
             </div>
         </div>
