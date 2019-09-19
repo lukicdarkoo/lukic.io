@@ -1,0 +1,430 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/84739a5aa9.js" crossorigin="anonymous"></script>
+    <style>
+        /* https://i.etsystatic.com/10642849/r/il/a313e8/1788890833/il_fullxfull.1788890833_syrm.jpg */
+
+        :root {
+            --border-color: #eee;
+            --padding: 10mm;
+            --sidebar-width: 70mm;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .cv {
+            margin: 30px auto 12px auto;
+            width: 210mm;
+        }
+
+        .page {
+            background-color: #fff;
+            width: 210mm;
+            height: 297mm;
+            padding: var(--padding);
+        }
+
+        .page-break {
+            padding: 20px;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: var(--sidebar-width);
+            border-right: 1px solid var(--border-color);
+            padding: 0 calc(var(--padding) / 2) 0 0;
+            float: left;
+        }
+
+        .content {
+            float: right;
+            width: calc(210mm - var(--sidebar-width) - 2 * var(--padding));
+            padding: 0 0 0 calc(var(--padding) / 2);
+        }
+
+        .image {
+            width: 100%;
+            border-radius: 100%;
+            padding: 0mm 8mm;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 0.7pt;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 12pt;
+            letter-spacing: 2.5pt;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 12pt;
+            letter-spacing: 2.5pt;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 10pt;
+            margin: 10pt 0 0pt 0;
+        }
+
+        ul,
+        p {
+            color: #444;
+            font-size: 10pt;
+            line-height: 14pt;
+        }
+
+        hr {
+            display: block;
+            margin-top: 20pt;
+            margin-bottom: 20pt;
+            border: 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        hr.tall {
+            border: 0;
+            border-top: 5pt solid #eee;
+            width: 50pt;
+        }
+
+        p {
+            margin: 3pt 0 5pt 0;
+            text-align: justify;
+        }
+
+        p.summary {
+            font-style: italic;
+        }
+
+        ul {
+            padding: 0 5mm;
+        }
+
+        a,
+        a:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            .cv .page-break {
+                display: none;
+                visibility: hidden;
+            }
+
+            .cv .page,
+            .cv .page * {
+                visibility: visible;
+            }
+
+            .cv {
+                position: absolute;
+                margin: 0;
+            }
+        }
+
+        footer {
+            width: 210mm;
+            margin: 0 auto;
+            padding: 0 8px 40px 8px;
+            text-align: right;
+            color: #aaa;
+        }
+
+        .experience>h4,
+        .experience>p {
+            display: inline-block;
+            width: calc(50% - var(--padding) / 2);
+            vertical-align: top;
+            padding: 0;
+            margin: 20pt 0 0 0;
+        }
+
+        .experience>p {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv">
+        <div class="page">
+            <div class="sidebar">
+                <img class="image" src="https://github.com/lukicdarkoo.png" />
+
+                <h1>Darko Lukić</h1>
+
+                <h2>Robotics Engineer</h2>
+
+                <hr class="tall" />
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:00381637859433">+381 63 785 94 33</a>
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:lukicdarkoo@gmail.com">lukicdarkoo@gmail.com</a>
+                </p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://www.google.com/maps/place/Lausanne/">Lausanne, Switzerland</a>
+                </p>
+
+                <p>
+                    <i class="fas fa-link"></i>
+                    <a href="https://lukic.io">lukic.io</a>
+                </p>
+
+                <p>
+                    <i class="fas fa-user"></i>
+                    <a href="http://www.serbia.com/">Serbian</a>
+                </p>
+
+                <hr />
+
+                <h3>Expertise</h3>
+
+                <ul>
+                    <li><b>Robotics</b> - Perception, Control, Simulation</li>
+                    <li><b>Embedded Systems</b> - Microcontrollers, FPGA, Embedded Linux</li>
+                    <li><b>Digital Signal Processing</b> - Wireless Communication, Acoustics</li>
+                    <li><b>Computer Vision</b> - Photogrammetry, CNN, Image Processing</li>
+                </ul>
+                <hr />
+
+                <h3>Education</h3>
+
+                <h4><a href="https://www.epfl.ch/en/">Swiss Federal Institute of Technology in Lausanne</a></h4>
+                <p>
+                    <b><a href="https://www.epfl.ch/education/master/programs/robotics/">MSc in Robotics</a></b>, Major
+                    in
+                    Mobile Robotics
+                </p>
+
+                <h4><a href="http://ftn.uns.ac.rs/691618389/fakultet-tehnickih-nauka">University of Novi Sad, Faculty of
+                        Technical Sciences</a></h4>
+                <p>
+                    <b>BSc (Hons) in Electrical and Computer Engineering</b>, Computing and Control Engineering,
+                    <a href="http://www.rt-rk.uns.ac.rs/">Computer Engineering and Computer Communications</a>
+                </p>
+            </div>
+
+            <div class="content">
+                <h3>Profile</h3>
+                <p class="summary">
+                    Darko is pursuing a Master degree in Robotics at EPFL, majoring in Mobile Robotics. His expertise
+                    also
+                    covers digital signal processing, embedded systems and computer vision. He
+                    is a former CERN Technical Student, former software lead of robotics club Memristor, founder of
+                    SpesDriver, and a major contributor to many software/hardware related projects.
+                </p>
+
+                <hr />
+
+                <h3>Professional Experience</h3>
+
+
+                <div class="experience">
+                    <h4>Student Researcher</h4>
+                    <p>Jul 2019 - Sep 2019</p>
+                </div>
+                <p>Swiss Federal Institute of Technology in Lausanne, Switzerland</p>
+                <p>
+                    At DISAL laboratory I was mainly focused on acoustics for autonomous underwater vehicles (AUVs). My
+                    role
+                    was to develop robust algorithms for acoustic communication and precise ranging for AUVs and compare
+                    it
+                    with available products on the market. The algorithms are implemented on the embedded system and
+                    successfully evaluated in Lake Geneva, outperforming the comparable products in a transfer speed.
+                </p>
+
+
+                <div class="experience">
+                    <h4>Technical Student</h4>
+                    <p>Oct 2017 - Sep 2018</p>
+                </div>
+                <p><a href="https://home.cern/">CERN</a>, Switzerland</p>
+                <p>
+                    At CERN I was a member of
+                    <a href="http://information-technology.web.cern.ch/about/organisation/linux-configuration-support">Configuration
+                        Management team</a>. My goal was to provide building blocks for instant communication
+                    between services. In order to achieve the goal, I had to create a Puppet module, Python library
+                    and CLI tool based on centralised ActiveMQ server. The software is scaled on more than 42000
+                    Linux based nodes and I helped integration with EOS, Load balancing, CASTOR, CCPCO, Roger, HAProxy
+                    and other services.
+                </p>
+
+                <div class="experience">
+                    <h4>Openlab Summer Student</h4>
+                    <p>Jul 2017 - August 2017</p>
+                </div>
+                <p><a href="http://www.gt-initiative.org/">Geneva Tsinghua Initiative</a>, Switzerland & China</p>
+                <p>The summer school was supported by a few Swiss and Chinese institutions (<a
+                        href="https://home.cern/">CERN</a>,
+                    <a href="https://www.unige.ch/">University of Geneva</a> and
+                    <a href="http://www.tsinghua.edu.cn">Tsinghua University</a>). I was working on an open source
+                    cosmic
+                    ray detector,
+                    <a href="http://cosmicpi.org/">CosmicPi</a>. My task was to create FPGA based trigger and web
+                    interface
+                    for showing the real-time
+                    data. Later, we went to Shenzhen, China, where we investigated potential manufacturers of the
+                    cosmic ray detector. There I visited
+                    <a href="https://www.xfactory.io/">xfactory</a>,
+                    <a href="https://www.seeedstudio.com/">Seeed Studio</a> and many more.
+                </p>
+
+                <div class="experience">
+                    <h4>Software Developer</h4>
+                    <p>Dec 2015 - present</p>
+                </div>
+                <p><a href="http://memristorrobotics.com">Memristor Robotics</a>, Serbia</p>
+                <p>My role has been to develop and support
+                    <a href="https://github.com/memristor">firmware and high-level logic</a> for robots. I was
+                    developing
+                    software for AVR, Raspberry
+                    Pi, LiDAR, different visualisations, integrating Modbus, CAN and various sensors and actuators.
+                    Until June 2017 I was leading software/firmware development group. Also, I have been involved in
+                    mechanical
+                    and electrical design, participated in team organisation and promotion.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="page">
+            <div class="sidebar">
+                <h1>Darko Lukić</h1>
+
+                <h2>Robotics Engineer</h2>
+
+                <hr class="tall" />
+
+                <h3>Technologies</h3>
+
+                <ul>
+                    <li>
+                        <b>C/C++</b>, <b>Python</b>, <b>JavaScript/Node.js</b>, Puppet, VHDL, sh/bash, Assembly, Java,
+                        Matlab, C#,
+                        Pascal, PHP, MySQL, LATEX
+                    </li>
+                    <li>
+                        <b>Git</b>, <b>OpenCV</b>, <b>Linux</b>, ROS, ARM, PIC, AVR, Elasticsearch, Kibana, Yii,
+                        Angular.js, Puppet, Raspberry Pi, PyTorch, Keras
+                    </li>
+                </ul>
+
+                <hr />
+
+                <h3>References</h3>
+
+                <p>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/lukicdarkoo">lukicdarkoo</a>
+                </p>
+
+                <p>
+                    <i class="fab fa-gitlab"></i>
+                    <a href="https://gitlab.com/lukicdarkoo">lukicdarkoo</a>
+                </p>
+
+                <p>
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/lukicdarkoo/">lukicdarkoo</a>
+                </p>
+            </div>
+
+            <div class="content">
+                <h3>Professional Experience <span style="text-transform: none; font-size: 11pt">continued</span></h3>
+
+
+                <div class="experience">
+                    <h4>Software Developer Intern</h4>
+                    <p>Aug 2016 - Sept 2016</p>
+                </div>
+                <p>
+                    <a href="https://www.execom.eu/">Execom</a>, Serbia
+                </p>
+                <p>Together with the other
+                    <a href="https://ljmocic.github.io/">student</a>, we developed a protype Android application for
+                    online
+                    payments. That required a
+                    knowledge of Android development, payment systems and we had to integrate a few
+                    <a href="https://aws.amazon.com/">Amazon Services</a>.
+                </p>
+
+                <hr />
+
+                <h3>Selected projects</h3>
+
+                <div class="experience">
+                    <h4>Dual Fisheye Camera Calibration</h4>
+                    <p>Feb 2019 - Jun 2019</p>
+                </div>
+                <p>
+                    <a href="https://lukic.io/files/Dual_Fisheye_Camera_Calibration.pdf">The project</a> is done as a
+                    semester project at <a class="c1" href="https://www.epfl.ch/labs/topo/" target="_blank">TOPO
+                        laboratory</a> supervised by <a href="http://home.deib.polimi.it/cucci/">Davide
+                        Antonio Cucci
+                    </a>. The purpose of the project was to develop a calibration
+                    algorithm for a <a class="c1" href="https://theta360.com/en/about/theta/v.html" target="_blank">dual
+                        fisheye camera</a> with lenses oriented in the opposite direction. The intrinsic
+                    parameters are of both cameras, as well as a rotation between the cameras, are determined using
+                    nonlinear least-squares optimisation. Multiple approaches are evaluated to maximise accuracy and
+                    minimise correlation between determined parameters. In addition, a simple semiautomatic chessboard
+                    <a href="https://gitlab.com/lukicdarkoo/calib-tools">corner finding tool</a> is developed to obtain
+                    data
+                    set from highly distorted images.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="javascript:void(0)" onclick="window.print()"><i class="fas fa-print"></i></a> | Designed by <a
+            href="https://lukic.io">Darko Lukić</a> ©2019
+    </footer>
+</body>
+
+</html>
