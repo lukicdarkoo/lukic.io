@@ -90,8 +90,7 @@
         }
 
         h4 {
-            text-transform: uppercase;
-            font-weight: 400;
+            font-weight: 600;
             font-size: 10.5pt;
             margin: 10pt 0 0pt 0;
         }
@@ -194,23 +193,31 @@
         .experience>h4,
         .experience>p {
             display: inline-block;
-            width: calc(50% - var(--padding) / 8);
             vertical-align: top;
             padding: 0;
             margin: 20pt 0 0 0;
         }
 
+        .experience>h4 {
+            width: calc(70% - var(--padding) / 8);
+        }
+
         .experience>p {
+            width: calc(30% - var(--padding) / 8);
             text-align: right;
         }
 
         .education>h4,
         .education>p {
             display: inline-block;
-            width: calc(50% - 10px);
+
             vertical-align: top;
             padding: 0;
             margin: 0;
+        }
+
+        .education>h4 {
+            width: calc(60% - 10px);
         }
 
         .education:nth-of-type(n+2) {
@@ -219,6 +226,7 @@
 
         .education>p {
             text-align: right;
+            width: calc(40% - 10px);
         }
 
         .first {
@@ -235,7 +243,7 @@
 
                 <h1>Darko Lukić</h1>
 
-                <h2>Robotics Engineer</h2>
+                <h2>Robotics Software Engineer</h2>
 
                 <hr class="tall" />
 
@@ -318,88 +326,87 @@
                     I am a second-year master student in Robotics (major in Mobile Robotics) at EPFL.
                     Prior to it, I obtained my BSc (Hons) degree in Computer Engineering. Together with numerous side
                     projects and internships
-                    in industry I strongly believe I am ready for challenging software related projects in Mobile
-                    Robotics. I enjoy working
-                    in dynamic and interdisciplinary teams, learning new concepts and technologies, and exploring new
-                    possibilities.
+                    in industry I strongly believe I am ready for challenging software related projects in mobile
+                    robotics. I enjoy working
+                    in dynamic and interdisciplinary teams, learning and applying new concepts and technologies.
                 </p>
 
                 <hr />
 
                 <h3>Professional Experience</h3>
 
+                <div class="experience">
+                    <h4><a target="_blank" href="https://cyberbotics.com/">Cyberbotics Ltd.</a></h4>
+                    <p>2020 - present</p>
+                </div>
+                <p>since february (full-time) in Switzerland</p>
+                <p>Developing <a target="_blank" href="https://github.com/cyberbotics/epuck_ros2">ROS2 support for
+                        e-puck2 physical robot</a>. Expanding capabilities of <a taget="_blank"
+                        href="https://github.com/cyberbotics/webots">Webots robot simulator</a> to support easier
+                    integration with ROS2.</p>
 
                 <div class="experience">
-                    <h4>EPFL</h4>
+                    <h4><a target="_blank" href="https://www.epfl.ch/en/">EPFL</a> / <a target="_blank"
+                            href="https://www.epfl.ch/labs/disal/">DISAL lab</a></h4>
                     <p>2019</p>
                 </div>
-                <p>2 months internship (full-time)</p>
-                <p>
-                    At <a target="_blank" href="https://www.epfl.ch/labs/disal/">DISAL</a> I was mainly focused on
-                    acoustics for autonomous underwater vehicles (AUVs). My
-                    role was to develop robust algorithms for acoustic communication and precise ranging for AUVs and
-                    compare it with available products on the market. The algorithms are implemented on the embedded
-                    system and successfully evaluated in <a target="_blank"
-                        href="https://www.google.com/maps/place/Lake+Geneva">Lake
-                        Geneva</a>, outperforming the comparable products in a transfer speed.
+                <p>2 months internship (full-time) in Switzerland</p>
+                <p>Developed and compared algorithms suitable for acoustic communication (FSK/QAM) used in the
+                    autonomous
+                    underwater vehicles. Implemented into AVR based PCB board, and quantified performances in the lab
+                    and <a target="_blank" href="https://www.google.com/maps/place/Lake+Geneva">a lake</a>. The
+                    device is compared to the commercial products achieving higher communication
+                    speed.
                 </p>
 
-
                 <div class="experience">
-                    <h4><a target="_blank" href="https://home.cern/">CERN</a></h4>
+                    <h4><a target="_blank" href="https://home.cern/">CERN</a> / <a
+                            href="http://information-technology.web.cern.ch/about/organisation/linux-configuration-support">IT-CM-LCS</a>
+                    </h4>
                     <p>2017 - 2018</p>
                 </div>
-                <p>12 months internship (full-time)</p>
+                <p>12 months internship (full-time) in Switzerland</p>
                 <p>
-                    As a member of
-                    <a target="_blank"
-                        href="http://information-technology.web.cern.ch/about/organisation/linux-configuration-support">Configuration
-                        Management team</a> my goal was to provide building blocks for instant communication
-                    between services. In order to achieve the goal, I had to create a <a
-                        href="https://www.epj-conferences.org/articles/epjconf/abs/2019/19/epjconf_chep2018_08029/epjconf_chep2018_08029.html">Puppet
-                        module, Python library
-                        and CLI tools</a> based on centralised ActiveMQ server. The software is scaled on more than
-                    42000
-                    Linux based nodes and I helped integration with Load balancing, HAProxy, CASTOR, CCPCO, Roger
-                    and other services.
+                    Developed software support for easy signalling between the internal services. 
+                    The software consists of <a
+                        href="https://www.epj-conferences.org/articles/epjconf/abs/2019/19/epjconf_chep2018_08029/epjconf_chep2018_08029.html">Python
+                        libraries, CLI tools and Puppet modules</a>.
+                    Coordinated with the other teams to help the communication integration to their services (e.g. Load
+                    balancing, HAProxy, CASTOR, CCPCO and Roger).
+                    Configured CI pipeline for automated testing and deployment.
+                    Deployed and scaled the software to the 42,000 Linux nodes.
                 </p>
 
                 <div class="experience">
-                    <h4><a target="_blank" href="http://www.gt-initiative.org/">Geneva-Tsinghua Initiative</a></h4>
+                    <h4><a target="_blank" href="https://home.cern/">CERN</a> / <a target="_blank"
+                            href="http://www.gt-initiative.org/">Geneva-Tsinghua Initiative</a></h4>
                     <p>2017</p>
                 </div>
                 <p>2 months internship (full-time) in Switzerland & China</p>
-                <p>The summer school was supported by <a target="_blank" href="https://home.cern/">CERN</a>,
-                    <a target="_blank" href="https://www.unige.ch/">University of Geneva</a> and
-                    <a target="_blank" href="http://www.tsinghua.edu.cn">Tsinghua University</a>. I was working on an
-                    open source
-                    cosmic
-                    ray detector,
-                    <a target="_blank" href="http://cosmicpi.org/">CosmicPi</a>. My task was to create <a
-                        href="https://zenodo.org/record/1033999">FPGA based
-                        trigger and web
-                        interface</a>
-                    for showing the real-time
-                    data. Later, we visited to Shenzhen, China, where we investigated potential manufacturers of the
-                    cosmic ray detector. There I visited
-                    <a target="_blank" href="https://www.xfactory.io/">xfactory</a>,
-                    <a target="_blank" href="https://www.seeedstudio.com/">Seeed Studio</a> and many more.
+                <p>Worked on open source
+                cosmic
+                ray detector, <a target="_blank" href="http://cosmicpi.org/">CosmicPi</a>, in the scope of a summer school
+                organized by <a target="_blank" href="https://home.cern/">CERN</a>,
+                <a target="_blank" href="https://www.unige.ch/">University of Geneva</a> and
+                <a target="_blank" href="http://www.tsinghua.edu.cn">Tsinghua University</a>.
+                Created a web interface for showing the real-time data.
+                Explored advantages of integration <a href="https://zenodo.org/record/1033999">FPGA based trigger
+                    integration</a> and production in Shenzhen, China (visited
+                <a target="_blank" href="https://www.xfactory.io/">xfactory</a>,
+                <a target="_blank" href="https://www.seeedstudio.com/">Seeed Studio</a> and more).
                 </p>
 
                 <div class="experience">
                     <h4><a target="_blank" href="http://memristorrobotics.com">Memristor Robotics</a></h4>
                     <p>2015 - present</p>
                 </div>
-                <p>12 months as a software leader (30%) + the project supporter after</p>
-                <p>My role has been to develop and support
-                    <a target="_blank" href="https://github.com/memristor">firmware and high-level logic</a> for robots.
-                    I was
-                    developing
-                    software for AVR, Raspberry
-                    Pi, LiDAR, different visualisations, integrating Modbus, CAN and various sensors and actuators.
-                    Until June 2017 I was leading software/firmware development group. Also, I have been involved in
-                    mechanical
-                    and electrical design, participated in team organisation and promotion.
+                <p>12 months as a software leader (30%) in Serbia</p>
+                <p>Created <a target="_blank" href="https://github.com/memristor/mep-master">a framework suitable for
+                        programming robots in the given context</a> and running on Raspberry Pi.
+                    Developed firmware to interface with servos, LiDAR, distance sensors and other devices, and
+                    integrated CAN bus communication.
+                    Led software development team, coordinated mechanical and electrical design, participated in team
+                    organisation and promotion.
                 </p>
             </div>
         </div>
@@ -410,7 +417,7 @@
             <div class="sidebar">
                 <h1 class="first">Darko Lukić</h1>
 
-                <h2>Robotics Engineer</h2>
+                <h2>Robotics Software Engineer</h2>
 
                 <hr class="tall" />
 
@@ -420,11 +427,11 @@
                     <li>
                         <b>C/C++</b>, <b>Python</b>, <b>JavaScript/Node.js</b>, Puppet, VHDL, bash, Assembly, Java,
                         Matlab, C#,
-                        PHP, MySQL, LATEX
+                        PHP, MySQL, LaTeX
                     </li>
                     <li>
                         <b>Git</b>, <b>OpenCV</b>, <b>Linux</b>, ROS, ARM, AVR, Elasticsearch, Kibana, React.js,
-                        Puppet, Raspberry Pi, PyTorch, Keras, Docker, CI/CD
+                        Raspberry Pi, PyTorch, Keras, Docker, CI/CD
                     </li>
                 </ul>
 
@@ -467,7 +474,8 @@
                 <ul>
                     <li>International competition Hardware & Software (2016) 3<sup>rd</sup></li>
                     <li>Olympics of innovations for South-Eastern Europe (2013) 1<sup>st</sup></li>
-                    <li><a href="http://www.savezinovatorars.org/index.php?lang=en">INOST</a>, International exhibition of innovation (2013 & 2016) 1<sup>st</sup></li>
+                    <li><a href="http://www.savezinovatorars.org/index.php?lang=en">INOST</a>, International exhibition
+                        of innovation (2013 & 2016) 1<sup>st</sup></li>
                 </ul>
 
                 <hr />
@@ -509,11 +517,9 @@
                 <p>
                     2 months internship (full-time)
                 </p>
-                <p>Together with the other
-                    <a target="_blank" href="https://ljmocic.github.io/">student</a>, we developed a protype Android
-                    application for
-                    online payments. That required a knowledge of Android development, payment systems and we had to
-                    integrate a few
+                <p>Developed a prototype Android application (together with another <a target="_blank"
+                        href="https://ljmocic.github.io/">student</a>) for online package payments.
+                    Integrated with payment systems and a few
                     <a target="_blank" href="https://aws.amazon.com/">Amazon Services</a>.
                 </p>
 
