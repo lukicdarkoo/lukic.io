@@ -34,11 +34,19 @@
             width: 210mm;
         }
 
-        .page {
+        .cv .page {
             background-color: #fff;
             width: 210mm;
             height: 297mm;
             padding: var(--padding);
+        }
+
+        .cv .page .footer {
+            width: 100%;
+            clear: both;
+            text-align: right;
+            font-size: 9pt;
+            color: #aaa;
         }
 
         .page-break {
@@ -207,17 +215,21 @@
             text-align: right;
         }
 
+        .education {
+            display: table;
+        }
+
         .education>h4,
         .education>p {
-            display: inline-block;
-
             vertical-align: top;
             padding: 0;
             margin: 0;
+            display: table-cell;
+            vertical-align: middle
         }
 
         .education>h4 {
-            width: calc(60% - 10px);
+            width: 70%;
         }
 
         .education:nth-of-type(n+2) {
@@ -279,7 +291,7 @@
                 <h3>Expertise</h3>
 
                 <ul>
-                    <li><b>Robotics</b> - Perception, Control, Simulation</li>
+                    <li><b>Robotics</b> - Simulation, Perception, Control</li>
                     <li><b>Embedded Systems</b> - Microcontrollers, FPGA, Embedded Linux</li>
                     <li><b>Digital Signal Processing</b> - Wireless Communication, Acoustics</li>
                     <li><b>Computer Vision</b> - Photogrammetry, CNN, Image Processing</li>
@@ -291,7 +303,7 @@
                 <!-- Swiss Federal Institute of Technology in Lausanne -->
                 <div class="education">
                     <h4><a target="_blank" href="https://www.epfl.ch/en/">EPFL</a></h4>
-                    <p>2018 - 2020</p>
+                    <p>2018 - 2020 (120 ECTS)</p>
                 </div>
                 <ul>
                     <li>
@@ -310,7 +322,7 @@
                     <h4><a target="_blank" href="http://ftn.uns.ac.rs/">University of
                             Novi
                             Sad</a></h4>
-                    <p>2013 - 2017</p>
+                    <p>2013 - 2017 (243 ECTS)</p>
                 </div>
                 <ul>
                     <li><b>BSc (Hons) in Electrical and Computer Engineering</b></li>
@@ -323,11 +335,11 @@
             <div class="content">
                 <p class="summary">
                     <!-- TODO: Change to Swiss Federal Institute of Technology in Lausanne -->
-                    I am a second-year master student in Robotics (major in Mobile Robotics) at EPFL.
-                    Prior to it, I obtained my BSc (Hons) degree in Computer Engineering. Together with numerous side
-                    projects and internships
+                    I am a master student in Robotics (major in Mobile Robotics) at EPFL.
+                    Prior to it, I obtained my BSc (Hons) degree in Computer Engineering. Together with many internships and side
+                    projects and 
                     in industry I strongly believe I am ready for challenging software related projects in mobile
-                    robotics. I enjoy working
+                    robotics or automotive. I enjoy working
                     in dynamic and interdisciplinary teams, learning and applying new concepts and technologies.
                 </p>
 
@@ -340,7 +352,7 @@
                     <p>2020 - present</p>
                 </div>
                 <p>since february (full-time) in Switzerland</p>
-                <p>Developing <a target="_blank" href="https://github.com/cyberbotics/epuck_ros2">ROS2 support for
+                <p>Doing my master's project in industry. Developing <a target="_blank" href="https://github.com/cyberbotics/epuck_ros2">ROS2 support for
                         e-puck2 physical robot</a>. Expanding capabilities of <a taget="_blank"
                         href="https://github.com/cyberbotics/webots">Webots robot simulator</a> to support easier
                     integration with ROS2.</p>
@@ -367,7 +379,7 @@
                 </div>
                 <p>12 months internship (full-time) in Switzerland</p>
                 <p>
-                    Developed software support for easy signalling between the internal services. 
+                    Developed software support for easy signalling between the internal services.
                     The software consists of <a
                         href="https://www.epj-conferences.org/articles/epjconf/abs/2019/19/epjconf_chep2018_08029/epjconf_chep2018_08029.html">Python
                         libraries, CLI tools and Puppet modules</a>.
@@ -384,16 +396,17 @@
                 </div>
                 <p>2 months internship (full-time) in Switzerland & China</p>
                 <p>Worked on open source
-                cosmic
-                ray detector, <a target="_blank" href="http://cosmicpi.org/">CosmicPi</a>, in the scope of a summer school
-                organized by <a target="_blank" href="https://home.cern/">CERN</a>,
-                <a target="_blank" href="https://www.unige.ch/">University of Geneva</a> and
-                <a target="_blank" href="http://www.tsinghua.edu.cn">Tsinghua University</a>.
-                Created a web interface for showing the real-time data.
-                Explored advantages of integration <a href="https://zenodo.org/record/1033999">FPGA based trigger
-                    integration</a> and production in Shenzhen, China (visited
-                <a target="_blank" href="https://www.xfactory.io/">xfactory</a>,
-                <a target="_blank" href="https://www.seeedstudio.com/">Seeed Studio</a> and more).
+                    cosmic
+                    ray detector, <a target="_blank" href="http://cosmicpi.org/">CosmicPi</a>, in the scope of a summer
+                    school
+                    organized by <a target="_blank" href="https://home.cern/">CERN</a>,
+                    <a target="_blank" href="https://www.unige.ch/">University of Geneva</a> and
+                    <a target="_blank" href="http://www.tsinghua.edu.cn">Tsinghua University</a>.
+                    Created a web interface for showing the real-time data.
+                    Evaluated advantages of integration <a href="https://zenodo.org/record/1033999">FPGA based trigger
+                        integration</a> and production in Shenzhen, China (visited
+                    <a target="_blank" href="https://www.xfactory.io/">xfactory</a>,
+                    <a target="_blank" href="https://www.seeedstudio.com/">Seeed Studio</a> and more).
                 </p>
 
                 <div class="experience">
@@ -408,6 +421,10 @@
                     Led software development team, coordinated mechanical and electrical design, participated in team
                     organisation and promotion.
                 </p>
+            </div>
+
+            <div class="footer">
+                This CV is also available at <a href="http://cv.lukic.io/">cv.lukic.io</a>
             </div>
         </div>
 
@@ -594,11 +611,15 @@
                     collaboration with local car schools which allows them to be advertised on my platform.
                 </p>
             </div>
+
+            <div class="footer">
+                This CV is also available at <a href="http://cv.lukic.io/">cv.lukic.io</a>
+            </div>
         </div>
     </div>
     <footer>
         <a href="javascript:void(0)" onclick="window.print()"><i class="fas fa-print"></i></a> |
-        Designed by <a href="https://lukic.io">Darko Lukić</a> ©2019
+        Designed by <a href="https://lukic.io">Darko Lukić</a> 2020
     </footer>
 
     <script src="https://kit.fontawesome.com/84739a5aa9.js" crossorigin="anonymous"></script>
