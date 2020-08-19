@@ -1,0 +1,16 @@
+title: Darko Lukić
+email: lukicdarkoo@gmail.com
+baseurl: '/projects'
+url: 'https://lukic.io'
+
+excerpt_separator: <!--more-->
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ''
+      type: 'projects'
+    values:
+      layout: 'project'
