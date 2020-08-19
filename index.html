@@ -2,280 +2,192 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Darko Lukić</title>
+    <title>Darko Lukić | Robotics Software Engineer</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
     <meta name="keywords" content="darko lukic, lukicdarkoo, novi sad, bijeljina, epfl, robotics">
     <meta name="google-site-verification" content="3j_RrGtobdVHNrLN9oapo5bHyfKlJZZODN2NaT7xVG8" />
     <meta name="yandex-verification" content="3781a84145878894" />
-    <meta name='theme-color' content='#2071b0'>
+    <meta name='theme-color' content='#2980b9'>
 
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.ico" />
 
-    <meta property="og:description" content="Hey, I am Darko, a master student of Robotics. My knowledge lies in signal processing, computer networks, configuration management and embedded systems. Also, I like web technologies :)" />
+    <meta property="og:description"
+        content="Hey, I am Darko, a master student of Robotics. My knowledge lies in signal processing, computer networks, configuration management and embedded systems. Also, I like web technologies :)" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Darko Lukić" />
     <meta property="og:image" content="https://github.com/lukicdarkoo.png" />
     <meta property="og:url" content="https://lukic.io" />
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127441938-1"></script>
-    <script>
-        // Google Analytics
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-127441938-1');
-        
-        // Telegram Chat Configuration
-        window.intergramId = '649775288';
-        window.intergramCustomizations = {
-            mainColor: '#2071b0',
-            titleOpen: 'Darko',
-            introMessage: 'Hi, how can I help you?',
-            alwaysUseFloatingButton: true,
-        };
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <style>
+        html {
+            font-family: 'Montserrat', sans-serif;
+            color: #000;
+        }
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
-    <link href="assets/resume.css" rel="stylesheet">
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-weight: unset;
+            text-align: left;
+            font-size: 30pt;
+            margin: 8pt 0;
+        }
+
+        h2 {
+            font-weight: unset;
+            text-align: left;
+            color: #777;
+            margin: 2pt 0;
+        }
+
+        .statement {
+            text-align: left;
+            font-size: 12pt;
+            line-height: 17pt;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .statement a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+
+        .image {
+            border-radius: 100%;
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+            filter: grayscale(100%);
+        }
+
+        .image:hover {
+            filter: grayscale(0%);
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        .content>.column {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+        }
+
+        .content>.left {
+            flex: 1;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content>.right {
+            flex: 3;
+        }
+
+        .social {
+            margin: 10px 0;
+        }
+
+        .social>.icon {
+            font-size: 18pt;
+            margin: 8px 8px 8px 0;
+            color: #777;
+        }
+
+        .social>.icon:hover {
+            color: #2980b9;
+        }
+        .social>.important {
+            color: #000;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .statement,
+            h1,
+            h2 {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Darko Lukic</span>
-            <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://github.com/lukicdarkoo.png?size=200" alt="Darko Lukic">
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-                </li>
-            </ul>
+<body>
+    <div class="content">
+        <div class="column left">
+            <img class="image" alt="Darko Lukić" src="photo.png" />
         </div>
-    </nav>
 
-    <div class="container-fluid p-0">
-        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div class="my-auto">
-                <h1 class="mb-0">Darko
-
-                    <span class="text-primary">Lukić</span>
-                </h1>
-
-                <hr />
-
-                <div class="subheading mb-5">
-                    <i class="fas fa-map-marker-alt"></i> Lausanne, Switzerland ·
-                    <i class="fas fa-phone"></i> (+41) 7 799 27 162
-                    <br />
-                    <i class="fas fa-plane faa-passing"></i>Novi Sad, Serbia ·
-                    <i class="fas fa-phone"></i> (+381) 63 785 94 33
-                    <br />
-                    <a href="mailto:lukicdarkoo@gmail.com">lukicdarkoo@gmail.com</a>
-                </div>
-                <p class="lead mb-5">
-                    Hey, I am Darko, a master student of Robotics. My knowledge lies in signal processing, computer networks, configuration management
-                    and embedded systems. Also, I like web technologies :)
+        <div class="column right">
+            <h1>Darko Lukić</h1>
+            <h2>Robotics Software Engineer</h2>
+            <div class="statement">
+                <p>I develop software for robots.
+                    My areas of interest are mobile robotics, embedded systems, digital signal processing, and computer
+                    vision.
                 </p>
-                <div class="social-icons">
-                    <a class="icon" href="https://www.linkedin.com/in/lukicdarkoo" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="icon" href="https://github.com/lukicdarkoo" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="icon" href="https://www.youtube.com/channel/UC1Q_Jn37rgHaMuDKINSOq7Q" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a class="icon" href="https://play.google.com/store/apps/developer?id=Darko+Luki%C4%87" target="_blank">
-                        <i class="fab fa-android"></i>
-                    </a>
-                    <a class="icon" href="https://medium.com/@lukicdarkoo" target="_blank">
-                        <i class="fab fa-medium"></i>
-                    </a>
-                    <a class="icon" href="http://lukicdarkoo.blogspot.com/" target="_blank">
-                        <i class="fab fa-blogger-b"></i>
-                    </a>
-                    <a class="cv" href="http://cv.lukic.io">
-                        <i class="fas fa-file-alt"></i> Curriculum vitae
-                    </a>
-                </div>
+
+                <p>
+                    I have acquired practical skills from <a href="https://home.cern/">CERN</a>, <a href="https://www.epfl.ch/labs/disal/">DISAL</a>, <a href="https://cyberbotics.com/">Cyberbotics</a>, and numerous side projects.
+                </p>
+
+                <p>
+                    I hold a master's degree in Robotics from <a href="https://www.epfl.ch/en/">EPFL</a> and a
+                    bachelor's degree in Computer Engineering from <a
+                        href="http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences">FTN</a>.
+                </p>
             </div>
-        </section>
 
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-            <div class="my-auto">
-                <h2 class="mb-5">Education</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Swiss Federal Institute of Technology in Lausanne</h3>
-                        <div class="subheading mb-3">
-                            <a href="https://master.epfl.ch/programs/robotics/">Master of Robotics</a>
-                        </div>
-                        <div>Major in Mobile Robotics</div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">September 2018 - present</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">University of Novi Sad, Faculty of Technical Sciences</h3>
-                        <div class="subheading mb-3">
-                            <a href="http://www.ftn.uns.ac.rs/n1649562982/computing-and-control-engineering">Bachelor with Honours in Electrical and Computer Engineering</a>
-                        </div>
-                        <div>Computing and Control Engineering,
-                            <a href="http://www.rt-rk.uns.ac.rs/">Computer Engineering and Computer Communications</a>
-                        </div>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">September 2013 - October 2017</span>
-                    </div>
-                </div>
-
+            <div class="social">
+                <a class="icon important" href="http://cv.lukic.io">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+                <a class="icon important" href="mailto:lukicdarkoo@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="icon important" href="https://www.linkedin.com/in/lukicdarkoo" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="icon important" href="https://github.com/lukicdarkoo" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="icon" href="https://medium.com/@lukicdarkoo" target="_blank">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a class="icon" href="https://www.youtube.com/channel/UC1Q_Jn37rgHaMuDKINSOq7Q" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a class="icon" href="https://play.google.com/store/apps/developer?id=Darko+Luki%C4%87" target="_blank">
+                    <i class="fab fa-android"></i>
+                </a>
+                <a class="icon" href="http://lukicdarkoo.blogspot.com/" target="_blank">
+                    <i class="fab fa-blogger-b"></i>
+                </a>
             </div>
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-            <div class="my-auto">
-                <h2 class="mb-5">Experience</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Technical Student</h3>
-                        <div class="subheading mb-3">
-                            <a href="https://home.cern/">CERN</a>
-                        </div>
-                        <p>
-                            At CERN I was a member of
-                            <a href="http://information-technology.web.cern.ch/about/organisation/linux-configuration-support">Configuration Management team</a>. My goal was to provide building blocks for instant communication
-                            between services. In order to achieve the goal, I had to create a Puppet module, Python library
-                            and CLI tool based on centralised ActiveMQ server. The software is scaled on more than 42000
-                            Linux based nodes and I helped integration with EOS, Load balancing, CASTOR, CCPCO, Roger, HAProxy
-                            and other services.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">October 2017 - September 2018</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Openlab Summer Student</h3>
-                        <div class="subheading mb-3">
-                            <a href="http://www.gt-initiative.org/">Geneva Tsinghua Initiative</a>
-                        </div>
-                        <p>The summer school was supported by a few Swiss and Chinese institutions (
-                            <a href="https://home.cern/">CERN</a>,
-                            <a href="https://www.unige.ch/">University of Geneva</a> and
-                            <a href="http://www.tsinghua.edu.cn">Tsinghua University</a>). I was working on an open source cosmic ray detector,
-                            <a href="http://cosmicpi.org/">CosmicPi</a>. My task was to create FPGA based trigger and web interface for showing the real-time
-                            data. Later, we went to Shenzhen, China, where we investigated potential manufacturers of the
-                            cosmic ray detector. There I visited
-                            <a href="https://www.xfactory.io/">xfactory</a>,
-                            <a href="https://www.seeedstudio.com/">Seeed Studio</a> and many more.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">Julu 2017 - August 2017</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Software developer intern</h3>
-                        <div class="subheading mb-3">
-                            <a href="https://www.execom.eu/">Execom</a>
-                        </div>
-                        <p>Together with the other
-                            <a href="https://ljmocic.github.io/">student</a>, we developed a protype Android application for online payments. That required a
-                            knowledge of Android development, payment systems and we had to integrate a few
-                            <a href="https://aws.amazon.com/">Amazon Services</a>.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2016 - September 2016</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Software engineer lead</h3>
-                        <div class="subheading mb-3">
-                            <a href="http://memristorrobotics.com">Memristor Robotics</a>
-                        </div>
-                        <p>My role has been to develop and support 
-                            <a href="https://github.com/memristor">firmware and high-level logic</a> for robots. I was developing software for AVR, Raspberry
-                            Pi, LiDAR, different visualisations, integrating Modbus, CAN and various sensors and actuators.
-                            Until June 2017 I was leading software/firmware development group. Also, I was involved in mechanical
-                            and electrical design, participated in team organisation and promotion.
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">December 2015 - present</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="m-0">
-        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-            <div class="my-auto">
-                <h2 class="mb-5">Projects</h2>
-
-                <div id="project-list">
-                    <input type="text" class="form-control search-fuzzy" placeholder="Filter by typing eg. 'Robotics', 'Microcontroller'..." />
-
-                    <ul class="list"></ul>
-                    <ul class="pagination"></ul>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </div>
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-
-    <script src="assets/googledocs.js"></script>
-    <script src="assets/resume.js"></script>
-
-    <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+    <script src="https://kit.fontawesome.com/84739a5aa9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
