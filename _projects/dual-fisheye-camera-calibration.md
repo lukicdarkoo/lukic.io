@@ -1,7 +1,7 @@
 ---
 title: Dual Fisheye Camera Calibration
 period: 2019/02 - 2019/06 
-cover_image: images/camera_calibration_residuals.png
+cover_image: /images/camera_calibration_residuals.png
 tags: academic medium
 keywords: [ Camera Calibration, Dual Fisheye, Bundle Adjustment, Optimisation, OpenCV ]
 ---

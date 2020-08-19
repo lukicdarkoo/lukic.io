@@ -1,7 +1,7 @@
 ---
 title: Underwater Acoustic Communication
 period: 2018/09 - 2019/01 
-cover_image: images/transducer_and_hydrophone.png
+cover_image: /images/transducer_and_hydrophone.png
 tags: academic medium
 keywords: [ Modulation, FSK, PSK, Signal Processing, Acoustic Communication, Python, C, AVR ]
 ---
