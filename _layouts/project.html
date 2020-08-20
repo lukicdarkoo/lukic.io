@@ -35,9 +35,15 @@ layout: default
   </a>
   {%- endif %}
 
-  {%- if page.website -%}
+  {%- if page.website -%} 
   <a class="chips" href="{{ page.website }}">
     <i class="fas fa-link"></i> Website
+  </a>
+  {%- endif %}
+
+  {%- if page.slides -%}
+  <a class="chips" href="{{ page.slides }}">
+    <i class="fas fa-file-powerpoint"></i> Slides
   </a>
   {%- endif %}
 

@@ -18,6 +18,8 @@ layout: default
                 <a href="{{ project.url | relative_url }}">
                     <h2>{{ project.title | escape }}</h2>
                 </a>
+
+                <span class="year">{{ project.period | regex_replace: '\/.*', '' }}</span>
             </div>
 
             <div class="image-container">

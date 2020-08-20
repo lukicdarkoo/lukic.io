@@ -1,4 +1,5 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 4.1.1"
+gem "jekyll"
+gem "jekyll-regex-replace"
 
 # bundle exec jekyll serve
