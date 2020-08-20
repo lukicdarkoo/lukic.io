@@ -3,7 +3,7 @@ title: Multi-robot Navigation in Cluttered Environments
 period: 2019/10 - 2019/12 
 thumbnail: /images/dis_crossing.png
 tags: [ academic, medium ]
-keywords: [ Simulation, Webots, Multi-robot, Reinforcment Learning, PSO, Obstacle Avoidance ]
+keywords: [ Simulation, Webots, Multi-robot, Reinforcement Learning, PSO, Obstacle Avoidance ]
 report: /files/DIS_Flocking_PSO.pdf
 code: https://github.com/huajian1069/Distributed-Intelligent-System
 ---

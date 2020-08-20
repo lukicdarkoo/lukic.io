@@ -16,10 +16,10 @@ Developed <a href="https://index.ros.org/doc/ros2/">ROS2</a> driver for <a href=
 
 <!--more-->
 
-Robotics simulations have been proven to be a powerful tool for develop-ing a robot controller as they are easy to set up, cheap, fast, and convenientto use.
+Robotics simulations have been proven to be a powerful tool for developing a robot controller as they are easy to set up, cheap, fast, and convenientto use.
 However, the final objective is usually to deploy the controller on thereal robots or even to run the controller on an arbitrary robot.
 This thesispresents a ROS2 driver for e-puck2 physical robots and a generalized ROS2driver for Webots simulated robots.
 The ROS2 drivers expose a nearly identical ROS2 interface that allows a controller to interact in the same way withthe physical e-puck2 and the simulated robots without changes.
 Effectively, it allows the controller developers a seamless transition between simulatedand physical e-puck2 robots or other simulated robots.
 The ROS2 driversare validated in multiple scenarios, like navigation and mapping.
-The re-sults prove that researchers can quickly validate their ROS2 controllers onthe e-puck2 physical or simulated robot and other Webots simulated robots.
+The results prove that researchers can quickly validate their ROS2 controllers onthe e-puck2 physical or simulated robot and other Webots simulated robots.
