@@ -20,7 +20,9 @@ layout: default
                 </a>
             </div>
 
-            <img src="{{ project.cover_image }}" />
+            <a href="{{ project.url | relative_url }}">
+                <img src="{{ project.cover_image }}" />
+            </a>
 
             <div class="inner">
                 <span>{{ project.period }}</span>
