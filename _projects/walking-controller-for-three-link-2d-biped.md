@@ -2,7 +2,7 @@
 title: Walking Controller for a Three-link 2D Biped
 period: 2018/09 - 2018/12
 thumbnail: /images/legged_robot.gif
-tags: academic, small
+tags: [ academic, small ]
 keywords: [ Kinematics, Dynamics, Locomotion, MATLAB, Simulation, Differential Equations, Genetic Algorithm ]
 code: https://github.com/lukicdarkoo/legged-robots
 report: /files/LeggedRobots_Three-link_Biped.pdf

@@ -1,8 +1,8 @@
 ---
 title: SpesRobo, Robotic Prototyping Platform
 period: 2015/05 - 2016/04
-thumbnail: /images/spesrobo.png
-tags: sideproject, medium
+thumbnail: /images/spesrobot_in_action.png
+tags: [ sideproject, medium ]
 website: https://spesrobo.bitbucket.io/
 video: https://www.youtube.com/watch?v=j32L86yP7x4
 keywords: [ Web Application, Robotics, React.js, Flux ]

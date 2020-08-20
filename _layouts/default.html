@@ -49,7 +49,7 @@
     }
 
     .project-item img {
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
         height: 100%;
         transition: transform .5s ease;
@@ -92,11 +92,15 @@
     }
 
     .project .chips {
-        margin-right: 8px;
+        margin: 8px;
         padding: 6px 20px;
         background-color: #2980b9;
         color: #fff;
         border-radius: 15px;
+        display: block;
+        float: left;
+        width: 100px;
+        text-align: center;
     }
 
     .project .keywords {
@@ -112,11 +116,17 @@
     .project img {
         margin: 10px;
         float: left;
-        max-width: 300px;
+        max-width: 320px;
     }
 
     .project h1 {
         font-weight: normal;
+    }
+
+    footer {
+        padding: 32px 12px;
+        text-align: right;
+        color: #777;
     }
 
     @media (max-width: 600px) {
@@ -148,6 +158,11 @@
     <main class="container">
         {{ content }}
     </main>
+
+
+    <footer>
+        Copyright © Darko Lukić {{ 'now' | date: "%Y" }}
+    </footer>
 
     <script src="https://kit.fontawesome.com/84739a5aa9.js" crossorigin="anonymous"></script>
 </body>
