@@ -11,7 +11,8 @@ layout: default
 
     {%- if projects.size > 0 -%}
     <div class="project-list">
-        {%- for project in projects -%}
+        {% assign sorted_projects = projects | sort: 'period' | reverse %}
+        {%- for project in sorted_projects -%}
         <div class="project-item">
             <div class="inner">
                 <a href="{{ project.url | relative_url }}">
