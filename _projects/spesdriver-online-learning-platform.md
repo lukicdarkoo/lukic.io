@@ -2,13 +2,14 @@
 title: SpesDriver, Online Learning Platform
 period: 2012/08 - present 
 thumbnail: /images/spesdriver.png
-tags: sideproject medium
+tags: sideproject, medium
 keywords: [ Web Application, REST, MVC, ORM, I18N, Cordova, Android, Angular, Yii2 ]
 website: https://spesdriver.com/ba
 video: https://www.youtube.com/watch?v=Um5cL-jxPfw
 ---
 
-<img src="/images/spesdriver.png" /> SpesDriver, mobile and web application, is the online learning platform for drivers.
+<img src="/images/spesdriver.png" />
+SpesDriver, <a href="https://play.google.com/store/apps/details?id=com.lukicdarkoo.spesdriver&hl=en">mobile</a> and <a href="https://spesdriver.com/ba">web</a> application, is the online learning platform for drivers.
 
 <!--more-->
 

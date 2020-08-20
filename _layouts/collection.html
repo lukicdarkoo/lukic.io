@@ -20,9 +20,11 @@ layout: default
                 </a>
             </div>
 
-            <a href="{{ project.url | relative_url }}">
-                <img src="{{ project.thumbnail }}" />
-            </a>
+            <div class="image-container">
+                <a href="{{ project.url | relative_url }}">
+                    <img src="{{ project.thumbnail }}" />
+                </a>
+            </div>
 
             <div class="inner">
                 <p>{{ project.preview | default: project.excerpt | strip_html }}</p>
