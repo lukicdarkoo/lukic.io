@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,11 +10,8 @@
     <meta name="yandex-verification" content="3781a84145878894" />
     <meta name='theme-color' content='#2980b9'>
 
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.png" />
 
-    <meta property="og:description"
-        content="Hey, I am Darko, a master student of Robotics. My knowledge lies in signal processing, computer networks, configuration management and embedded systems. Also, I like web technologies :)" />
-    <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Darko Lukić" />
     <meta property="og:image" content="https://github.com/lukicdarkoo.png" />
@@ -21,9 +19,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
     <style>
-        html {
+        html,
+        body {
             font-family: 'Montserrat', sans-serif;
             color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
         }
 
         body {
@@ -35,7 +38,7 @@
         h1 {
             font-weight: unset;
             text-align: left;
-            font-size: 30pt;
+            font-size: 42px;
             margin: 8pt 0;
         }
 
@@ -44,12 +47,13 @@
             text-align: left;
             color: #777;
             margin: 2pt 0;
+            font-size: 24px;
         }
 
         .statement {
             text-align: left;
-            font-size: 12pt;
-            line-height: 17pt;
+            font-size: 16px;
+            line-height: 22px;
         }
 
         a {
@@ -57,7 +61,7 @@
             text-decoration: none;
         }
 
-        .statement a:hover {
+        a:hover {
             text-decoration: underline;
             color: #2980b9;
         }
@@ -76,26 +80,29 @@
         }
 
         .content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             max-width: 800px;
         }
 
-        .content>.column {
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .content .column {
             padding: 8px;
             display: flex;
             flex-direction: column;
             flex-basis: 100%;
         }
 
-        .content>.left {
+        .content .left {
             flex: 1;
             justify-content: center;
             text-align: center;
         }
 
-        .content>.right {
+        .content .right {
             flex: 3;
         }
 
@@ -112,12 +119,43 @@
         .social>.icon:hover {
             color: #2980b9;
         }
+
+        .social a:hover {
+            text-decoration: none;
+        }
+
         .social>.important {
             color: #000;
         }
 
+        .menu a {
+            padding: 0 10px;
+        }
+
+        .menu a:first-of-type {
+            padding-left: 0;
+        }
+
+        .menu {
+            clear: both;
+            font-size: 20px;
+            margin: 8px 0 8px 0;
+            display: block;
+        }
+
+        .menu .dot:before {
+            content: '\00B7';
+            color: #777;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 8px 16px;
+        }
+
         @media (max-width: 600px) {
-            .content {
+            .row {
                 flex-direction: column;
                 text-align: center;
             }
@@ -133,59 +171,69 @@
 
 <body>
     <div class="content">
-        <div class="column left">
-            <img class="image" alt="Darko Lukić" src="photo.png" />
+        <div class="row">
+            <div class="column left">
+                <img class="image" alt="Darko Lukić" src="photo.png" />
+            </div>
+
+            <div class="column right">
+                <h1>Darko Lukić</h1>
+                <h2>Robotics Software Engineer</h2>
+                <div class="statement">
+                    <p>I develop software for robots.
+                        My areas of interest are mobile robotics, embedded systems, digital signal processing, and
+                        computer
+                        vision.
+                    </p>
+
+                    <p>
+                        I have acquired practical skills from <a href="https://home.cern/">CERN</a>, <a
+                            href="https://www.epfl.ch/labs/disal/">DISAL</a>, <a
+                            href="https://cyberbotics.com/">Cyberbotics</a>, and numerous side projects.
+                    </p>
+
+                    <p>
+                        I hold a master's degree in Robotics from <a href="https://www.epfl.ch/en/">EPFL</a> and a
+                        bachelor's degree in Computer Engineering from <a
+                            href="http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences">FTN</a>.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="column right">
-            <h1>Darko Lukić</h1>
-            <h2>Robotics Software Engineer</h2>
-            <div class="statement">
-                <p>I develop software for robots.
-                    My areas of interest are mobile robotics, embedded systems, digital signal processing, and computer
-                    vision.
-                </p>
+        <hr />
 
-                <p>
-                    I have acquired practical skills from <a href="https://home.cern/">CERN</a>, <a href="https://www.epfl.ch/labs/disal/">DISAL</a>, <a href="https://cyberbotics.com/">Cyberbotics</a>, and numerous side projects.
-                </p>
+        <nav class="menu">
+            <a href="/cv">resume</a>
+            <span class="dot"></span>
+            <a href="/projects">projects</a>
+        </nav>
 
-                <p>
-                    I hold a master's degree in Robotics from <a href="https://www.epfl.ch/en/">EPFL</a> and a
-                    bachelor's degree in Computer Engineering from <a
-                        href="http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences">FTN</a>.
-                </p>
-            </div>
 
-            <div class="social">
-                <a class="icon important" href="http://cv.lukic.io">
-                    <i class="fas fa-file-alt"></i>
-                </a>
-                <a class="icon important" href="mailto:lukicdarkoo@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a class="icon important" href="https://www.linkedin.com/in/lukicdarkoo" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a class="icon important" href="https://github.com/lukicdarkoo" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a class="icon" href="https://medium.com/@lukicdarkoo" target="_blank">
-                    <i class="fab fa-medium"></i>
-                </a>
-                <a class="icon" href="https://www.youtube.com/channel/UC1Q_Jn37rgHaMuDKINSOq7Q" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a class="icon" href="https://play.google.com/store/apps/developer?id=Darko+Luki%C4%87" target="_blank">
-                    <i class="fab fa-android"></i>
-                </a>
-                <a class="icon" href="http://lukicdarkoo.blogspot.com/" target="_blank">
-                    <i class="fab fa-blogger-b"></i>
-                </a>
-            </div>
+        <div class="social">
+            <a class="icon important" href="mailto:lukicdarkoo@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a class="icon important" href="https://www.linkedin.com/in/lukicdarkoo" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="icon important" href="https://github.com/lukicdarkoo" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="icon" href="https://medium.com/@lukicdarkoo" target="_blank">
+                <i class="fab fa-medium"></i>
+            </a>
+            <a class="icon" href="https://www.youtube.com/channel/UC1Q_Jn37rgHaMuDKINSOq7Q" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a class="icon" href="https://play.google.com/store/apps/developer?id=Darko+Luki%C4%87" target="_blank">
+                <i class="fab fa-android"></i>
+            </a>
+            <a class="icon" href="http://lukicdarkoo.blogspot.com/" target="_blank">
+                <i class="fab fa-blogger-b"></i>
+            </a>
         </div>
     </div>
-
 
     <script src="https://kit.fontawesome.com/84739a5aa9.js" crossorigin="anonymous"></script>
 </body>
