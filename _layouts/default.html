@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+<meta name='theme-color' content='#2980b9'>
+<link rel="shortcut icon" href="/favicon.ico" />
 <title>{{ page.title | default: "Projects" }} | {{ site.title }}</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
 <style>
@@ -13,6 +16,7 @@
     .project-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .project-item {
@@ -36,7 +40,6 @@
     }
 
     .project {
-        width: 100%;
         padding: 16px;
     }
 
@@ -69,6 +72,13 @@
         vertical-align: middle;
         margin: 5px;
     }
+
+    @media (max-width: 600px) {
+        .project-item,
+    .project {
+        margin: 12px 0;
+    }
+        }
 </style>
 
 <body>
@@ -79,11 +89,11 @@
                 <img src="https://github.com/lukicdarkoo.png" />
                 {{ site.title }}
             </a>
-            /
-            <a href="/projects">Projects</a>
             {%- if page.title -%}
-            /
-            <a href="{{ project.url | relative_url }}">{{ page.title | escape }}</a>
+            / <a href="/projects">Projects</a>
+            / {{ page.title | escape }}
+            {%- else -%}
+            / Projects
             {%- endif %}
         </nav>
     </header>
