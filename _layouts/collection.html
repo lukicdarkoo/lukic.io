@@ -21,11 +21,10 @@ layout: default
             </div>
 
             <a href="{{ project.url | relative_url }}">
-                <img src="{{ project.cover_image }}" />
+                <img src="{{ project.thumbnail }}" />
             </a>
 
             <div class="inner">
-                <span>{{ project.period }}</span>
                 <p>{{ project.preview | default: project.excerpt | strip_html }}</p>
             </div>
         </div>

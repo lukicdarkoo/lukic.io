@@ -24,6 +24,10 @@
         overflow: hidden;
     }
 
+    .project-item h2 {
+        font-weight: normal;
+    }
+
     .project-item .inner {
         padding: 16px;
     }
@@ -82,12 +86,36 @@
         margin: 5px;
     }
 
-    @media (max-width: 600px) {
-        .project-item,
-    .project {
-        margin: 12px 0;
+    .project .chips {
+        margin-right: 8px;
+        padding: 6px 20px;
+        background-color: #2980b9;
+        color: #fff;
+        border-radius: 15px;
     }
+
+    .project .keywords {
+        padding: 18px 0;
+        color: #999;
+    }
+
+    .project .period {
+        color: #999;
+    }
+
+    .project img {
+        margin: 10px;
+        float: left;
+        max-width: 300px;
+    }
+
+    @media (max-width: 600px) {
+
+        .project-item,
+        .project {
+            margin: 12px 0;
         }
+    }
 </style>
 
 <body>
@@ -110,6 +138,8 @@
     <main class="container">
         {{ content }}
     </main>
+
+    <script src="https://kit.fontawesome.com/84739a5aa9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

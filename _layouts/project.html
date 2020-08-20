@@ -5,8 +5,39 @@ layout: default
 
   <h1>{{ page.title | escape }}</h1>
 
+  <div class="period">
+    {{ page.period }}
+  </div>
+
   <div class="content">
     {{ content }}
   </div>
 
+  <div class="keywords">
+  Keywords: {{ page.keywords | join: ", " }}
+  </div>
+
+  {%- if page.report -%}
+  <a class="chips" href="{{ page.report }}">
+    <i class="fas fa-file-pdf"></i> Report
+  </a>
+  {%- endif %}
+
+  {%- if page.video -%}
+  <a class="chips" href="{{ page.video }}">
+    <i class="fas fa-video"></i> Video
+  </a>
+  {%- endif %}
+
+  {%- if page.code -%}
+  <a class="chips" href="{{ page.code }}">
+    <i class="fas fa-code"></i> Code
+  </a>
+  {%- endif %}
+
+  {%- if page.website -%}
+  <a class="chips" href="{{ page.website }}">
+    <i class="fas fa-link"></i> Website
+  </a>
+  {%- endif %}
 </article>

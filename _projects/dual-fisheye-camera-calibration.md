@@ -1,12 +1,16 @@
 ---
 title: Dual Fisheye Camera Calibration
 period: 2019/02 - 2019/06 
-cover_image: /images/camera_calibration_residuals.png
+thumbnail: /images/camera_calibration_residuals.png
 tags: academic medium
 keywords: [ Camera Calibration, Dual Fisheye, Bundle Adjustment, Optimisation, OpenCV ]
+report: /files/Dual_Fisheye_Camera_Calibration.pdf
+code: https://gitlab.com/lukicdarkoo/camera-calibration
+website: https://gitlab.com/lukicdarkoo/calib-tools
 ---
 
-Within the project we develop a calibration algorithm for a dual fisheye camera with lenses oriented in the opposite direction
+<img src="/images/camera_calibration_residuals.png" /> 
+We develop a calibration algorithm for a dual fisheye camera (Ricoh Theta V) and chessboard corner finding tool for highly distorted images.
 
 <!--more-->
 
