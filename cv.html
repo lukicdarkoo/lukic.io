@@ -5,11 +5,12 @@
     <title>CV | Darko Lukić</title>
     <meta name="viewport" content="device=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --border-color: #d5d5d5;
-            --padding: 10mm;
+            --padding: 8mm;
             --sidebar-width: 72mm;
             --dark-text: #000;
             --light-text: #111;
@@ -20,7 +21,7 @@
             margin: 0;
             padding: 0;
             background-color: var(--dark-text);
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Source Sans Pro', sans-serif;
             box-sizing: border-box;
             font-size: 12pt;
         }
@@ -29,6 +30,10 @@
         *:before,
         *:after {
             box-sizing: inherit;
+        }
+
+        small {
+            color: var(--light-text);;
         }
 
         .cv {
@@ -58,7 +63,7 @@
         .sidebar {
             height: 100%;
             width: var(--sidebar-width);
-            border-right: 1px solid var(--border-color);
+            border-right: 1pt solid var(--border-color);
             padding: 0 calc(var(--padding) / 2) 0 0;
             float: left;
         }
@@ -227,7 +232,7 @@
             padding: 0;
             margin: 0;
             display: table-cell;
-            vertical-align: middle
+            vertical-align: middle;
         }
 
         .education>h4 {
@@ -240,7 +245,6 @@
 
         .education>p {
             text-align: right;
-            width: calc(40% - 10px);
         }
 
         .first {
@@ -304,7 +308,7 @@
                 <!-- Swiss Federal Institute of Technology in Lausanne -->
                 <div class="education">
                     <h4><a target="_blank" href="https://www.epfl.ch/en/">EPFL</a></h4>
-                    <p>2018 - 2020 (120 ECTS)</p>
+                    <p>2018 - 2020 <small>(120 ECTS)</small></p>
                 </div>
                 <ul>
                     <li>
@@ -323,7 +327,7 @@
                     <h4><a target="_blank" href="http://ftn.uns.ac.rs/">University of
                             Novi
                             Sad</a></h4>
-                    <p>2013 - 2017 (243 ECTS)</p>
+                    <p>2013 - 2017 <small>(243 ECTS)</small></p>
                 </div>
                 <ul>
                     <li><b>BSc (Hons) in Electrical and Computer Engineering</b></li>
@@ -335,14 +339,9 @@
 
             <div class="content">
                 <p class="summary">
-                    <!-- TODO: Change to Swiss Federal Institute of Technology in Lausanne -->
-                    I am a master student in Robotics (major in Mobile Robotics) at EPFL.
-                    Prior to it, I obtained my BSc (Hons) degree in Computer Engineering. Together with many internships
-                    and side
-                    projects and
-                    in industry I strongly believe I am ready for challenging software related projects in mobile
-                    robotics or automotive. I enjoy working
-                    in dynamic and interdisciplinary teams, learning and applying new concepts and technologies.
+                    My areas of interest are mobile robotics, embedded systems, digital signal processing, and computer vision.
+                    I have acquired practical skills from CERN, DISAL, Cyberbotics, and numerous side projects.
+                    I hold a master's degree in Robotics from EPFL and a bachelor's degree in Computer Engineering from FTN.
                 </p>
 
                 <hr />
@@ -450,7 +449,7 @@
                         PHP, MySQL, LaTeX
                     </li>
                     <li>
-                        <b>Git</b>, <b>OpenCV</b>, <b>Linux</b>, ROS, ARM, AVR, Elasticsearch, Kibana, React.js,
+                        <b>Git</b>, <b>OpenCV</b>, <b>ROS/ROS2</b>, Linux, ARM, AVR, Elasticsearch, Kibana, React.js,
                         Raspberry Pi, PyTorch, Keras, Docker, CI/CD
                     </li>
                 </ul>
