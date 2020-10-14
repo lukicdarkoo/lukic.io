@@ -6,6 +6,7 @@
     <meta name="viewport" content="device=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet" />
 
     <style>
         :root {
@@ -33,7 +34,7 @@
         }
 
         small {
-            color: var(--light-text);;
+            color: var(--light-text);
         }
 
         .cv {
@@ -84,6 +85,7 @@
         h2 {
             text-align: center;
             text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
         }
 
         h1 {
@@ -93,7 +95,7 @@
 
         h2 {
             font-weight: 400;
-            font-size: 12pt;
+            font-size: 11.5pt;
             letter-spacing: 2.5pt;
         }
 
@@ -102,6 +104,7 @@
             font-weight: 400;
             font-size: 12pt;
             letter-spacing: 2.5pt;
+            font-family: 'Montserrat', sans-serif;
         }
 
         h4 {
@@ -205,23 +208,6 @@
             color: #aaa;
         }
 
-        .experience>h4,
-        .experience>p {
-            display: inline-block;
-            vertical-align: top;
-            padding: 0;
-            margin: 20pt 0 0 0;
-        }
-
-        .experience>h4 {
-            width: calc(70% - var(--padding) / 8);
-        }
-
-        .experience>p {
-            width: calc(30% - var(--padding) / 8);
-            text-align: right;
-        }
-
         .education {
             display: table;
         }
@@ -249,6 +235,25 @@
 
         .first {
             margin-top: 0;
+        }
+
+        .experience {}
+
+        .experience>h4,
+        .experience>p {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0;
+            margin: 20pt 0 0 0;
+        }
+
+        .experience>h4 {
+            width: calc(70% - var(--padding) / 8);
+        }
+
+        .experience>p {
+            width: calc(30% - var(--padding) / 8);
+            text-align: right;
         }
     </style>
 </head>
@@ -296,18 +301,18 @@
                 <h3>Expertise</h3>
 
                 <ul>
-                    <li><b>Robotics</b> - Simulation, Perception, Control</li>
-                    <li><b>Embedded Systems</b> - Microcontrollers, FPGA, Embedded Linux</li>
-                    <li><b>Digital Signal Processing</b> - Wireless Communication, Acoustics</li>
-                    <li><b>Computer Vision</b> - Photogrammetry, CNN, Image Processing</li>
+                    <li><b>Robotics</b> <br /> Simulation, Perception, Control</li>
+                    <li><b>Embedded Systems</b> <br /> Microcontrollers, FPGA, Embedded Linux</li>
+                    <li><b>Digital Signal Processing (DSP)</b> <br /> Wireless Communication, Acoustics</li>
+                    <li><b>Computer Vision</b> <br /> Photogrammetry, CNN, Image Processing</li>
                 </ul>
                 <hr />
 
                 <h3>Education</h3>
 
-                <!-- Swiss Federal Institute of Technology in Lausanne -->
                 <div class="education">
-                    <h4><a target="_blank" href="https://www.epfl.ch/en/">EPFL</a></h4>
+                    <h4><a target="_blank" href="https://www.epfl.ch/en/">Swiss Federal Institute of Technology in
+                            Lausanne</a></h4>
                     <p>2018 - 2020 <small>(120 ECTS)</small></p>
                 </div>
                 <ul>
@@ -339,9 +344,11 @@
 
             <div class="content">
                 <p class="summary">
-                    My areas of interest are mobile robotics, embedded systems, digital signal processing, and computer vision.
+                    My areas of interest are mobile robotics, embedded systems, digital signal processing, and computer
+                    vision.
                     I have acquired practical skills from CERN, DISAL, Cyberbotics, and numerous side projects.
-                    I hold a master's degree in Robotics from EPFL and a bachelor's degree in Computer Engineering from FTN.
+                    I hold a master's degree in Robotics from EPFL and a bachelor's degree in Computer Engineering from
+                    FTN.
                 </p>
 
                 <hr />
@@ -350,14 +357,37 @@
 
                 <div class="experience">
                     <h4><a target="_blank" href="https://cyberbotics.com/">Cyberbotics Ltd.</a></h4>
+                    <p>2020<small>/09</small> - present</p>
+                </div>
+                <p>Full-time employment in Switzerland</p>
+                <ul>
+                    <li>
+                        Improving ROS2 support for Webots open-source robot simulator
+                    </li>
+                    <li>
+                        Developing a support for Webots to bring robot simulations in a browser
+                    </li>
+                </ul>
+
+                <div class="experience">
+                    <h4><a target="_blank" href="https://cyberbotics.com/">Cyberbotics Ltd.</a></h4>
                     <p>2020<small>/02</small> - 2020<small>/08</small></p>
                 </div>
                 <p>6 months internship (full-time) in Switzerland</p>
-                <p>Doing my master's project in industry. Developing <a target="_blank"
-                        href="https://github.com/cyberbotics/epuck_ros2">ROS2 support for
-                        e-puck2 physical robot</a>. Expanding capabilities of <a taget="_blank"
-                        href="https://github.com/cyberbotics/webots">Webots robot simulator</a> to support easier
-                    integration with ROS2.</p>
+                <ul>
+                    <li>
+                        Developed ROS2 driver for e-puck2 <a target="_blank"
+                            href="https://github.com/cyberbotics/epuck_ros2">physical</a> and <a
+                            href="https://github.com/cyberbotics/webots_ros2/tree/master/webots_ros2_epuck">simulated</a>
+                        robots
+                    </li>
+                    <li>
+                        Implemented automatic creation of ROS2 interface from a Webots model
+                    </li>
+                    <li>
+                        Extended Webots API to support URDF export
+                    </li>
+                </ul>
 
                 <div class="experience">
                     <h4><a target="_blank" href="https://www.epfl.ch/en/">EPFL</a> / <a target="_blank"
@@ -365,12 +395,13 @@
                     <p>2019<small>/07</small> - 2019<small>/09</small></p>
                 </div>
                 <p>2 months internship (full-time) in Switzerland</p>
-                <p>Developed and compared algorithms suitable for acoustic communication (FSK/QAM) used in the
-                    autonomous
-                    underwater vehicles. Implemented into AVR based PCB board, and quantified performances in the lab
-                    and <a target="_blank" href="https://www.google.com/maps/place/Lake+Geneva">a lake</a>. The
-                    device is compared to the commercial products achieving higher communication
-                    speed.
+                <p>
+                <ul>
+                    <li>Developed and compared algorithms for acoustic communication</li>
+                    <li>Implemented the FSK modulation to AVR microcontroller</li>
+                    <li>Quantified performances in a lab and in a lake</li>
+                    <li>Achieved a higher communication speed than the commercial products</li>
+                </ul>
                 </p>
 
                 <div class="experience">
@@ -381,14 +412,14 @@
                 </div>
                 <p>12 months internship (full-time) in Switzerland</p>
                 <p>
-                    Developed software support for easy signalling between the internal services.
-                    The software consists of <a
-                        href="https://www.epj-conferences.org/articles/epjconf/abs/2019/19/epjconf_chep2018_08029/epjconf_chep2018_08029.html">Python
-                        libraries, CLI tools and Puppet modules</a>.
-                    Coordinated with the other teams to help the communication integration to their services (e.g. Load
-                    balancing, HAProxy, CASTOR, CCPCO and Roger).
-                    Configured CI pipeline for automated testing and deployment.
-                    Deployed and scaled the software to the 42,000 Linux nodes.
+                <ul>
+                    <li>Developed notification system (<a
+                            href="https://www.epj-conferences.org/articles/epjconf/abs/2019/19/epjconf_chep2018_08029/epjconf_chep2018_08029.html">CERNMegabus</a>)
+                        based on ActiveMQ</li>
+                    <li>Coordinated with multiple teams to integrate the system with their services</li>
+                    <li>Utilized CI/CD builds, Koji, RPM packages and Puppet for deployment</li>
+                    <li>Deployed and scaled the system to 42,000 Linux machines</li>
+                </ul>
                 </p>
 
                 <div class="experience">
@@ -397,18 +428,16 @@
                     <p>2017<small>/07</small> - 2017<small>/09</small></p>
                 </div>
                 <p>2 months internship (full-time) in Switzerland & China</p>
-                <p>Worked on open source
-                    cosmic
-                    ray detector, <a target="_blank" href="http://cosmicpi.org/">CosmicPi</a>, in the scope of a summer
-                    school
-                    organized by <a target="_blank" href="https://home.cern/">CERN</a>,
-                    <a target="_blank" href="https://www.unige.ch/">University of Geneva</a> and
-                    <a target="_blank" href="http://www.tsinghua.edu.cn">Tsinghua University</a>.
-                    Created a web interface for showing the real-time data.
-                    Evaluated advantages of integration <a href="https://zenodo.org/record/1033999">FPGA based trigger
-                        integration</a> and production in Shenzhen, China (visited
-                    <a target="_blank" href="https://www.xfactory.io/">xfactory</a>,
-                    <a target="_blank" href="https://www.seeedstudio.com/">Seeed Studio</a> and more).
+                <p>
+                <ul>
+                    <li>Created a web interface for open-source cosmic ray detector - <a target="_blank"
+                            href="http://cosmicpi.org/">CosmicPi</a></li>
+                    <li>Evaluated advantages of <a href="https://zenodo.org/record/1033999">FPGA based trigger for
+                            cosmic rays</li>
+                    <li>Evaluated production in Shenzhen, China (visited
+                        <a target="_blank" href="https://www.xfactory.io/">xfactory</a>,
+                        <a target="_blank" href="https://www.seeedstudio.com/">Seeed Studio</a>...)</li>
+                </ul>
                 </p>
 
                 <div class="experience">
@@ -416,12 +445,13 @@
                     <p>2015 - present</p>
                 </div>
                 <p>12 months as a software leader (25%) in Serbia</p>
-                <p>Created <a target="_blank" href="https://github.com/memristor/mep-master">a framework suitable for
-                        programming robots in the given context</a> and running on Raspberry Pi.
-                    Developed firmware to interface with servos, LiDAR, distance sensors and other devices, and
-                    integrated CAN bus communication.
-                    Led software development team, coordinated mechanical and electrical design, participated in team
-                    organisation and promotion.
+                <p>
+                <ul>
+                    <li>Developed <a target="_blank" href="https://github.com/memristor/mep-master">a robotics
+                            framework</a> for EUROBOT (deployed on Raspberry Pi)</li>
+                    <li>Developed firmware to support motion, servos, LiDAR and more over CAN</li>
+                    <li>Led software development team and coordinated robot design</li>
+                </ul>
                 </p>
             </div>
 
@@ -440,7 +470,7 @@
 
                 <hr class="tall" />
 
-                <h3>Technologies</h3>
+                <h3>Skills</h3>
 
                 <ul>
                     <li>
@@ -536,11 +566,10 @@
                 <p>
                     2 months internship (full-time) in Serbia
                 </p>
-                <p>Developed a prototype Android application (together with another <a target="_blank"
-                        href="https://ljmocic.github.io/">student</a>) for online package payments.
-                    Integrated with payment systems and a few
-                    <a target="_blank" href="https://aws.amazon.com/">Amazon Services</a>.
-                </p>
+                <ul>
+                    <li>Developed a prototype Android application for online package payments</li>
+                    <li>Integrated with payment systems and a few Amazon Services</li>
+                </ul>
 
                 <hr />
 
